@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3>Welcome</h1>
+	</div>
+	<div class="panel-body">
+		<form action="{{ url_for('SubmitRequest')}}" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="title-t">Name:</label>
+            	<textarea type="text" name="title" id="title-t" rows=1 cols=max class="form-control"></textarea>
+            </div>
+            <div class="text-right">
+            	<button class="btn btn-primary" type="submit">
+            	Submit
+            	</button>
+            </div>
+        </form>
+	</div>
+</div>

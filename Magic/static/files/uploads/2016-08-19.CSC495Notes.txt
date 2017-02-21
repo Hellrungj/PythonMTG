@@ -1,0 +1,36 @@
+Product Summary 
+	Associate Task
+Stakeholder 
+- All the user that I going to use the database
+
+Hardware/Software Requirements 
+System Diagram
+
+
+Use Case Diagram
+
+Example of Use Case Diagram: 
+
+Admin               Other User
+  (Add Admin)
+   /----(Login)-----\
+ 0/                  \0
+ |-----(Make Forms)---|	
+/ \                  / \
+
+
+Hardware/Software Requirements: 
+
+Ubuntu 16.04
+Apache 2 Web Server - Takes HTTP request for files 
+Flash Web Framework
+WSGI - Flask Convertion Interface
+
+|--Apache-|
+||--WSGI-||
+|| Flask ||
+||-------||
+|---------|
+ 
+
+ 
