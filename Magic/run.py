@@ -35,23 +35,6 @@ def introduction():
     player_data = [names,libraries]
     return player_data
 
-"""
-def turn(player):
-    print("Life: {0}".format(player.life))
-    if player.turn == 0:
-        game_one.first_phase(player)
-    else:
-        game_one.beginning_phase(player)
-        print("Beginning Phase")
-    game_one.main_phase(player)
-    print("Main Phase 1")
-    game_one.combat_phase(player)
-    game_one.main_phase(player)
-    print("Main Phase 2")
-    game_one.end_phase(player)
-    player.turn += 1
-    print("{0}, Turn {1} Over".format(player.name,player.turn))
-"""
 def main():
     game_one = MTG() #Create Class Intaince
     game_one.store() #Creates a Log File
