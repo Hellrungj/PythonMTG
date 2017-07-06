@@ -1,18 +1,66 @@
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3>Welcome</h1>
-	</div>
-	<div class="panel-body">
-		<form action="{{ url_for('SubmitRequest')}}" method="post" enctype="multipart/form-data">
-            <div>
-                <label for="title-t">Name:</label>
-            	<textarea type="text" name="title" id="title-t" rows=1 cols=max class="form-control"></textarea>
-            </div>
-            <div class="text-right">
-            	<button class="btn btn-primary" type="submit">
-            	Submit
-            	</button>
-            </div>
+{% extends "snips/base.html" %}
+{% set CurrentPage = "index" %}
+{% block body %}
+  <div class="panel panel-default">
+  	<div class="panel-heading">
+  		<h3>Welcome to MTG - Please search for a card.</h1>
+  	</div>
+	  <div class="panel-body">
+  		<div>
+  		  <form action="/search/name=John" method="post" enctype="multipart/form-data">
+          <div>
+            <label for="Name">Name:</label>
+          	<input type="text" name="name" id="Name" rows=1 cols=max class="form-control"></input>
+          </div>
+          <div>
+            <label for="Colors">Colors:</label>
+          	<input type="text" name="colors" id="Colors" rows=1 cols=max class="form-control"></input>
+          </div>
+          <div>
+            <label for="Type">Type:</label>
+          	<input type="text" name="type" id="Type" rows=1 cols=max class="form-control"></input>
+          </div>
+          <div>
+            <label for="Cost">Cost:</label>
+          	<input type="text" name="cost" id="Cost" rows=1 cols=max class="form-control"></input>
+          </div>
+          <div class="text-right">
+          	<button class="btn btn-primary" type="submit">
+          	  Submit
+          	</button>
+          </div>
         </form>
-	</div>
-</div>
+      </div>
+  
+  	<div>
+  	  {% if not DATA == None %}
+    	  <table id="example" class="display" cellspacing="0" width="100%">
+    			<!--
+    			<thead>
+    			  <tr>
+    				  <th>Name</th>
+    				  <th>Colors</th>
+    				  <th>Mana Cost</th>
+    				  <th>Type</th>
+    				  <th>Text</th>
+    				  <th>Image</th>
+    			  </tr>
+    			</thead>
+          -->
+    			<tbody>
+    			  {% for item in DATA %}
+            <tr>
+      				<!--<th><p>{{ item.name }}</p></th>
+      				<th><p>{{ item.colors }}</p></th>
+      				<th><p>{{ item.mana_cost }}</p></th>
+      			  <th><p>{{ item.type }}</p></th>
+      			  <th><p>{{ item.text }}</p></th>-->
+      			  <th><img src="{{ item.image_url }}"></th>
+      			</tr>
+  			    {% endfor %}
+     			</tbody>
+    		</table>
+  	  {% endif %}
+  	</div>
+  </div>
+{% endblock %}

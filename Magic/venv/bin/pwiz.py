@@ -1,4 +1,4 @@
-#!/home/ubuntu/workspace/Magic/venv/bin/python3
+#!/home/ubuntu/workspace/venv/bin/python3
 
 import datetime
 import sys

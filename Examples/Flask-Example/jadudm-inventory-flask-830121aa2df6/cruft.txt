@@ -1,0 +1,39 @@
+#################
+# CRUFT / EXPLORATIONS
+
+#@app.route('/insert/<name>/<value>/<int:count>')
+#def insert(name, value, count):
+    # Here, I added "value", which was not in the table previously.
+    # DynamoDB simply added it as a "column," and all other items did not have it.
+    # This is... fragile, therefore, on the keys you use... don't make a typo!
+    # This is a very good reason to use a nifty class (or some kind of "ORM") to make sure
+    # that you don't accidentally "extend" the DB.
+
+    # This uses Boto3 directly
+    # table.put_item (Item = {'itemid': randint(0, 10000000), 'name': name, 'value': value, 'count': count})
+
+    # This uses PynamoDB
+#    i = Item (name = name, value = value, count = count)
+    # Save the item.
+#    i.save()
+#    return redirect("/atleast/1", code=302)
+
+
+# This was the /search/name...
+    #name = request.form['name']
+    # We might get an empty form; don't search if that happens.
+    #if name == "":
+    #  response = []
+    #else:
+    #  print ("Name is: %s" % name)
+    #  response = Item.scan(name__contains = name)
+    #return render_template('searchresults.html', items = response)
+
+# This was how we did search.
+    # This uses Boto3 directly
+    #    if qualifier == "gt":
+    #        response = table.scan(FilterExpression = Attr('count').gt(count))
+    #    elif qualifier == "lt":
+    #        response = table.scan(FilterExpression = Attr('count').lt(count))
+    #    else:
+    #        response = []
