@@ -1,29 +1,38 @@
 # To Do List:
 By: John Hellrung
 ## Code:
-### [ ] Add Notes
+### Add Notes:
+#### DIR: Main
 - [x] run.py
 - [ ] run_api.py
 - [ ] setup.sh
-#### [ ] app dir
-- [ ] __init__.py
+#### DIR: app
+- [ ] init.py
 - [ ] Cards.py
 - [ ] MTG.py
-#### [ ] templates dir
-##### [ ] snips dir
+#### DIR: templates
+##### DIR: snips
 - [ ] base.html
 - [ ] navigaton.html
 - [ ] index.html
-#### [ ] test dir
+#### DIR: test
 - [ ] test1.py
 - [ ] testing.py
 - [ ] Untiled1.py
 - [ ] Clean-up
 - [ ] run.py
 - [ ] api.py
-### [ ] Add tests
+### Add tests:
+- [ ] test1.py
+- [ ] testing.py
+- [ ] Untiled1.py
 ## API:
 - [ ] Clean-up
 ## Documention:
 - [ ] Write up a Design Specifation Text
 - [ ] Write up a desgin ideas text
+
+'''python
+def main():
+    print("Hello, world!")
+'''
