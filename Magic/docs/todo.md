@@ -1,9 +1,9 @@
 # To Do List:
 ## Code:
-* Clean-up
-* Add tests
+- [] Clean-up
+- [] Add tests
 ## API:
-* Clean-up
+- [] Clean-up
 ## Documention:
-* Write up a Design Specifation Text
-* Write up a desgin ideas text
+- [] Write up a Design Specifation Text
+- [] Write up a desgin ideas text
