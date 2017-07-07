@@ -1,6 +1,6 @@
-# PythonMTG:
+# MTG:
 
 ## Goal:
 This is educational project to learn more APIs and games using python
 
-BY: John Hellrung
+__By:__ John Hellrung
