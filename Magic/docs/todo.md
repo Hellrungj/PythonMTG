@@ -31,14 +31,3 @@ By: John Hellrung
 ## Documention:
 - [ ] Write up a Design Specifation Text
 - [ ] Write up a desgin ideas text
-
-Testing Markdown - Code Preview:
-```python
-def main():
-    print("Hello, world!")
-```
-```javascript
-function test() {
- console.log("look ma’, no spaces");
-}
-```
