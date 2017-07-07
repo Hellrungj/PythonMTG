@@ -32,7 +32,13 @@ By: John Hellrung
 - [ ] Write up a Design Specifation Text
 - [ ] Write up a desgin ideas text
 
-'''python
+Testing Markdown - Code Preview:
+```python
 def main():
     print("Hello, world!")
-'''
+```
+```javascript
+function test() {
+ console.log("look ma’, no spaces");
+}
+```
